@@ -1,0 +1,161 @@
+/* GAYA KHUSUS UNTUK HALAMAN KELOLA KODE PRODUKSI (REVISI DETAIL) */
+
+/* Mengubah latar belakang konten utama menjadi putih, khusus untuk halaman ini */
+.main-content {
+    background-color: var(--white-color);
+}
+
+.generator-container {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+}
+
+.input-column, .output-column {
+    flex: 1; /* Membuat kedua kolom memiliki lebar yang sama */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Judul "Data" dan "QR Kode Produksi" */
+.input-column h2, .output-column h2 {
+    font-size: 1.5rem; /* 24px, disamakan dengan H1 global */
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: var(--text-color);
+}
+
+.input-cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Gaya dasar untuk semua card, sekarang tanpa style default */
+.card {
+    background-color: var(--white-color);
+    border-radius: 8px;
+}
+
+/* Gaya khusus untuk card pilihan "Order" & "Inventori Telur" */
+.selection-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border: 1px solid var(--border-color);
+    padding: 16px 20px;
+}
+.selection-card:hover {
+    background-color: var(--light-gray-bg);
+}
+
+/* Gaya untuk card detail (Kode Supplier, dll) */
+.details-card {
+    padding: 8px 20px;
+    border: 1px solid var(--border-color);
+}
+.details-card .detail-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+.details-card .detail-item:last-child {
+    border-bottom: none;
+}
+.details-card .detail-item label {
+    color: #6c757d;
+}
+.details-card .detail-item span {
+    font-weight: 500;
+}
+
+/* Gaya untuk card daftar Petugas Packing */
+.selection-list-card {
+    padding: 20px;
+    border: 1px solid var(--border-color);
+}
+.selection-list-card h3 {
+    font-size: 16px;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+.selection-list-card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.selection-list-card li label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+}
+
+/* Tombol Generate */
+.generate-btn {
+    width: 20%;
+    padding: 12px;
+    font-size: 16px;
+    justify-content: center;
+}
+
+/* Kartu hasil di kolom kanan */
+.result-card {
+    padding: 24px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+}
+.result-card h3 {
+    font-size: 14px;
+    color: #6c757d;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+.result-card .production-code {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+.qr-code-placeholder {
+    margin: 0 auto 24px auto;
+}
+.qr-code-placeholder i.ti-qrcode {
+    font-size: 200px;
+    color: var(--text-color);
+}
+.summary-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background-color: var(--light-gray-bg);
+    text-align: center;
+    font-family: var(--font-family);
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+.action-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 20px;
+    margin-top: 8px;
+}
+
+/* Gaya tombol outline untuk "Print" */
+.btn-outline-primary {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+.btn-outline-primary:hover {
+    background-color: #fef0e9; /* Warna hover yang sangat lembut */
+    color: var(--primary-color);
+}

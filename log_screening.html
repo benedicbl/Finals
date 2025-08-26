@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log Hasil Screening - Surya Abadi Admin</title>
+
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="assets/styles/log_screening.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <div class="logo">
+            <img
+              src="assets/img/logo.png"
+              alt="Logo Surya Abadi"
+              class="logo-image"
+            />
+            <span
+              >surya abadi <br /><small style="font-weight: 400"
+                >admin</small
+              ></span
+            >
+          </div>
+        </div>
+        <nav class="sidebar-nav">
+          <ul>
+            <li>
+              <a href="index.html"
+                ><i class="ti ti-layout-dashboard"></i><span>Dashboard</span></a
+              >
+            </li>
+
+            <li class="nav-category">STOCK LOG</li>
+            <li>
+              <a href="stock_opname.html"
+                ><i class="ti ti-clipboard-check"></i
+                ><span>Stock Opname</span></a
+              >
+            </li>
+            <li>
+              <a href="kode_produksi.html"
+                ><i class="ti ti-numbers"></i
+                ><span>Kelola Kode Produksi</span></a
+              >
+            </li>
+
+            <li class="nav-category">PAGE INVENTORI</li>
+            <li>
+              <a href="inventori_telur.html"
+                ><i class="ti ti-egg"></i><span>Inventori Telur</span></a
+              >
+            </li>
+            <li>
+              <a href="inventori_bahan.html"
+                ><i class="ti ti-package"></i
+                ><span>Inventori Bahan Produksi</span></a
+              >
+            </li>
+
+            <li class="nav-category">PAGE PENJUALAN</li>
+            <li>
+              <a href="list_pesanan.html"
+                ><i class="ti ti-clipboard-text"></i><span>Pesanan</span></a
+              >
+            </li>
+            <li>
+              <a href="riwayat_pesanan.html"
+                ><i class="ti ti-history"></i
+                ><span>Riwayat Pesanan</span></a
+              >
+            </li>
+
+            <li class="nav-category">PAGE CATATAN</li>
+            <li class="active">
+              <a href="log_screening.html"
+                ><i class="ti ti-bulb-filled"></i
+                ><span>Log Hasil Screening</span></a
+              >
+            </li>
+            <li>
+              <a href="catatan_penjualan.html"
+                ><i class="ti ti-clipboard-list"></i
+                ><span>Catatan Penjualan</span></a
+              >
+            </li>
+
+            <li class="nav-category">DATA KARYAWAN</li>
+            <li>
+              <a href="kelola_data.html"
+                ><i class="ti ti-user-check"></i
+                ><span>Kelola Data Karyawan</span></a
+              >
+            </li>
+            <li>
+              <a href="kelola_akun.html"
+                ><i class="ti ti-at"></i
+                ><span>Kelola Akun Staff</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <header class="header">
+          <div class="user-actions">
+            <a href="#" class="icon-btn"><i class="ti ti-mail"></i></a>
+            <a href="#" class="icon-btn"><i class="ti ti-bell"></i></a>
+            <a href="#" class="icon-btn"><i class="ti ti-user-circle"></i></a>
+          </div>
+        </header>
+
+        <section class="content-body">
+          <h1>Log Hasil Screening</h1>
+          <div class="action-bar">
+            <div class="search-bar">
+              <i class="ti ti-search"></i>
+              <input type="text" placeholder="Search for Petugas" />
+            </div>
+            <div class="filters">
+              <button class="btn btn-secondary">
+                Kode Supplier <i class="ti ti-chevron-down"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>NAMA PETUGAS</th>
+                  <th>KODE TELUR</th>
+                  <th>JUMLAH</th>
+                  <th>TANGGAL SCREENING</th>
+                  <th>KODE SUPPLIER</th>
+                  <th>RINCIAN CATATAN</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>YANTO</td>
+                  <td>BB0127725</td>
+                  <th>1.775</th>
+                  <td>27/07/2025</td>
+                  <td><span class="supplier-badge badge-red">001</span></td>
+                  <td>
+                    <button class="btn btn-detail" data-log-id="1">
+                      Detail
+                    </button>
+                  </td>
+                  <td><i class="ti ti-dots-vertical"></i></td>
+                </tr>
+                <tr>
+                  <td>ALIM</td>
+                  <td>BB0127725</td>
+                  <th>2.450</th>
+                  <td>27/07/2025</td>
+                  <td><span class="supplier-badge badge-green">007</span></td>
+                  <td>
+                    <button class="btn btn-detail" data-log-id="2">
+                      Detail
+                    </button>
+                  </td>
+                  <td><i class="ti ti-dots-vertical"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div id="screening-modal" class="modal-overlay">
+      <div class="modal-content">
+        <button class="modal-close-btn">&times;</button>
+        <div class="modal-header">
+          <h2 id="modal-title">Rincian Catatan Screening</h2>
+          <div id="modal-supplier-code" class="supplier-code">
+            Kode Supplier <span></span>
+          </div>
+        </div>
+        <p id="modal-date" class="modal-date"></p>
+        <div id="modal-petugas-info" class="petugas-info">
+          <i class="ti ti-user"></i>
+          <span>Nama Petugas : <strong></strong></span>
+        </div>
+        <div id="modal-screening-details" class="screening-details"></div>
+        <div class="screening-summary">
+          <div class="summary-item">
+            <span>Total Butir</span>
+            <strong id="modal-total-butir">0</strong>
+          </div>
+          <div class="summary-item total-layak">
+            <span>Total Layak Produksi</span>
+            <strong id="modal-total-layak">0</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/scripts/log_screening.js"></script>
+    <script src="assets/scripts/main.js"></script>
+  </body>
+</html>

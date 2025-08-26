@@ -1,0 +1,126 @@
+/* GAYA KHUSUS UNTUK HALAMAN INVENTORI TELUR */
+
+.page-title {
+    margin-bottom: 24px;
+}
+
+.page-title h1 {
+    margin-bottom: 4px;
+}
+
+.page-title p {
+    color: #6c757d;
+    font-weight: 500;
+}
+
+/* --- Page Header (Untuk Judul dan Tombol Aksi) --- */
+.page-header {
+    display: flex;
+    justify-content: space-between; /* Mendorong judul ke kiri dan tombol ke kanan */
+    align-items: center; /* Menyejajarkan item secara vertikal */
+    margin-bottom: 24px;
+}
+
+/* --- Variasi Tombol (Hijau) --- */
+.btn-success {
+    background-color: #28a745; /* Warna hijau */
+    color: var(--white-color);
+}
+
+.btn-success:hover {
+    background-color: #218838; /* Warna hijau lebih gelap saat hover */
+}
+
+.accordion-list {
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.accordion-header,
+.accordion-trigger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    font-weight: 600;
+}
+
+.accordion-header {
+    color: #6c757d;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.accordion-trigger {
+    cursor: pointer;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.accordion-item:last-child .accordion-trigger {
+    border-bottom: none;
+}
+
+.accordion-trigger:hover {
+    background-color: var(--light-gray-bg);
+}
+
+.accordion-trigger .room-name {
+    flex-grow: 1;
+}
+
+.accordion-trigger .room-total {
+    margin-right: 24px;
+}
+
+.accordion-trigger .ti-chevron-right {
+    transition: transform 0.3s ease-in-out;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+    background-color: #f8f9fa;
+    color: #495057;
+}
+
+.accordion-content .content-header,
+.accordion-content .content-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 24px;
+}
+
+.accordion-content .content-header {
+    font-weight: 600;
+    color: #6c757d;
+    font-size: 12px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.accordion-content .content-row {
+    border-bottom: 1px solid #e9ecef;
+}
+
+.accordion-content .content-row:last-child {
+    border-bottom: none;
+}
+
+.empty-state {
+    padding: 16px 24px;
+    text-align: center;
+    font-style: italic;
+}
+
+.accordion-item.active .accordion-trigger .ti-chevron-right {
+    transform: rotate(90deg);
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 500px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}

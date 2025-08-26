@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kelola Kode Produksi - Surya Abadi Admin</title>
+
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="assets/styles/kode_produksi.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <div class="logo">
+            <img
+              src="assets/img/logo.png"
+              alt="Logo Surya Abadi"
+              class="logo-image"
+            />
+            <span
+              >surya abadi <br /><small style="font-weight: 400"
+                >admin</small
+              ></span
+            >
+          </div>
+        </div>
+        <nav class="sidebar-nav">
+          <ul>
+            <li class="nav-category">DASHBOARD</li>
+            <li>
+              <a href="index.html"
+                ><i class="ti ti-layout-dashboard"></i><span>Dashboard</span></a
+              >
+            </li>
+            <li class="nav-category">STOCK LOG</li>
+            <li>
+              <a href="stock_opname.html"
+                ><i class="ti ti-clipboard-check"></i
+                ><span>Stock Opname</span></a
+              >
+            </li>
+            <li class="active">
+              <a href="kode_produksi.html"
+                ><i class="ti ti-numbers"></i
+                ><span>Kelola Kode Produksi</span></a
+              >
+            </li>
+            <li class="nav-category">PAGE INVENTORI</li>
+            <li>
+              <a href="inventori_telur.html"
+                ><i class="ti ti-egg"></i><span>Inventori Telur</span></a
+              >
+            </li>
+            <li>
+              <a href="inventori_bahan.html"
+                ><i class="ti ti-package"></i
+                ><span>Inventori Bahan Produksi</span></a
+              >
+            </li>
+            <li class="nav-category">PAGE PENJUALAN</li>
+            <li>
+              <a href="list_pesanan.html"
+                ><i class="ti ti-clipboard-text"></i><span>Pesanan</span></a
+              >
+            </li>
+            <li>
+              <a href="riwayat_pesanan.html"
+                ><i class="ti ti-history"></i
+                ><span>Riwayat Pesanan</span></a
+              >
+            </li>
+            <li class="nav-category">PAGE CATATAN</li>
+            <li>
+              <a href="log_screening.html"
+                ><i class="ti ti-bulb-filled"></i
+                ><span>Log Hasil Screening</span></a
+              >
+            </li>
+            <li>
+              <a href="catatan_penjualan.html"
+                ><i class="ti ti-clipboard-list"></i
+                ><span>Catatan Penjualan</span></a
+              >
+            </li>
+            <li class="nav-category">DATA KARYAWAN</li>
+            <li>
+              <a href="kelola_data.html"
+                ><i class="ti ti-user-check"></i
+                ><span>Kelola Data Karyawan</span></a
+              >
+            </li>
+            <li>
+              <a href="kelola_akun.html"
+                ><i class="ti ti-user-circle"></i
+                ><span>Kelola Akun Staff</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <header class="header">
+          <div class="user-actions">
+            <a href="#" class="icon-btn"><i class="ti ti-mail"></i></a>
+            <a href="#" class="icon-btn"><i class="ti ti-bell"></i></a>
+            <a href="#" class="icon-btn"><i class="ti ti-user-circle"></i></a>
+          </div>
+        </header>
+
+        <section class="content-body">
+          <div class="generator-container">
+            <div class="input-column">
+              <h2>Data</h2>
+              <div class="input-cards-wrapper">
+                <div class="card selection-card">
+                  <span>Order</span>
+                  <i class="ti ti-chevron-right"></i>
+                </div>
+                <div class="card selection-card">
+                  <span>Inventori Telur</span>
+                  <i class="ti ti-chevron-right"></i>
+                </div>
+                <div class="card details-card">
+                  <div class="detail-item">
+                    <label>Telur yang digunakan :</label><span>-</span>
+                  </div>
+                  <div class="detail-item">
+                    <label>Kode Supplier Telur :</label><span>-</span>
+                  </div>
+                  <div class="detail-item">
+                    <label>Kode Petugas Screening :</label><span>-</span>
+                  </div>
+                  <div class="detail-item">
+                    <label>Jumlah Order Telur :</label><span>-</span>
+                  </div>
+                </div>
+                <div class="card selection-list-card">
+                  <h3>Petugas Packing</h3>
+                  <ul>
+                    <li>
+                      <label><input type="radio" name="petugas" /> YANTO</label>
+                    </li>
+                    <li>
+                      <label><input type="radio" name="petugas" /> ALIM</label>
+                    </li>
+                    <li>
+                      <label><input type="radio" name="petugas" /> ALEH</label>
+                    </li>
+                    <li>
+                      <label><input type="radio" name="petugas" /> AEP</label>
+                    </li>
+                    <li>
+                      <label
+                        ><input type="radio" name="petugas" /> SAIMUN</label
+                      >
+                    </li>
+                    <li>
+                      <label><input type="radio" name="petugas" /> JOHN</label>
+                    </li>
+                  </ul>
+                </div>
+                <button class="btn btn-primary generate-btn">Generate</button>
+              </div>
+            </div>
+
+            <div class="output-column">
+              <h2>QR Kode Produksi</h2>
+              <div class="card result-card">
+                <h3>Kode Produksi</h3>
+                <p class="production-code">
+                  KodeMitra_KodeSupplier_KodeSenter_KodePacking
+                </p>
+                <div class="qr-code-placeholder">
+                  <i class="ti ti-qrcode"></i>
+                </div>
+                <h3>Summary</h3>
+                <input
+                  type="text"
+                  class="summary-input"
+                  value="KodeMitra_KodeSupplier_KodeSenter_KodePacking"
+                  readonly
+                />
+                <div class="action-buttons">
+                  <button class="btn btn-outline-primary">
+                    <i class="ti ti-printer"></i> Print
+                  </button>
+                  <button class="btn btn-primary">
+                    <i class="ti ti-device-floppy"></i> Simpan
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="assets/scripts/main.js"></script>
+  </body>
+</html>

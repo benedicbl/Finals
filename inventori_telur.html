@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventori Telur - Surya Abadi Admin</title>
+
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="assets/styles/inventori_telur.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <div class="logo">
+            <img
+              src="assets/img/logo.png"
+              alt="Logo Surya Abadi"
+              class="logo-image"
+            />
+            <span
+              >surya abadi <br /><small style="font-weight: 400"
+                >admin</small
+              ></span
+            >
+          </div>
+        </div>
+        <nav class="sidebar-nav">
+          <ul>
+            <li>
+              <a href="index.html"
+                ><i class="ti ti-layout-dashboard"></i><span>Dashboard</span></a
+              >
+            </li>
+
+            <li class="nav-category">STOCK LOG</li>
+            <li>
+              <a href="stock_opname.html"
+                ><i class="ti ti-clipboard-check"></i
+                ><span>Stock Opname</span></a
+              >
+            </li>
+            <li>
+              <a href="kode_produksi.html"
+                ><i class="ti ti-numbers"></i
+                ><span>Kelola Kode Produksi</span></a
+              >
+            </li>
+
+            <li class="nav-category">PAGE INVENTORI</li>
+            <li class="active">
+              <a href="inventori_telur.html"
+                ><i class="ti ti-egg"></i><span>Inventori Telur</span></a
+              >
+            </li>
+            <li>
+              <a href="inventori_bahan.html"
+                ><i class="ti ti-package"></i
+                ><span>Inventori Bahan Produksi</span></a
+              >
+            </li>
+
+            <li class="nav-category">PAGE PENJUALAN</li>
+            <li>
+              <a href="list_pesanan.html"
+                ><i class="ti ti-clipboard-text"></i><span>Pesanan</span></a
+              >
+            </li>
+            <li>
+              <a href="riwayat_pesanan.html"
+                ><i class="ti ti-history"></i
+                ><span>Riwayat Pesanan</span></a
+              >
+            </li>
+
+            <li class="nav-category">PAGE CATATAN</li>
+            <li>
+              <a href="log_screening.html"
+                ><i class="ti ti-bulb-filled"></i
+                ><span>Log Hasil Screening</span></a
+              >
+            </li>
+            <li>
+              <a href="catatan_penjualan.html"
+                ><i class="ti ti-clipboard-list"></i
+                ><span>Catatan Penjualan</span></a
+              >
+            </li>
+
+            <li class="nav-category">DATA KARYAWAN</li>
+            <li>
+              <a href="kelola_data.html"
+                ><i class="ti ti-user-check"></i
+                ><span>Kelola Data Karyawan</span></a
+              >
+            </li>
+            <li>
+              <a href="kelola_akun.html"
+                ><i class="ti ti-at"></i
+                ><span>Kelola Akun Staff</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <header class="header">
+          <div class="user-actions">
+            <a href="#" class="icon-btn"><i class="ti ti-mail"></i></a>
+            <a href="#" class="icon-btn"><i class="ti ti-bell"></i></a>
+            <a href="#" class="icon-btn"><i class="ti ti-user-circle"></i></a>
+          </div>
+        </header>
+
+        <section class="content-body">
+          <div class="page-title">
+            <h1>Inventori Telur Global</h1>
+            <p id="grand-total">TOTAL FISIK : 0 BUTIR</p>
+          </div>
+
+          <div class="accordion-list">
+            <div class="accordion-header">
+              <span>NAMA RUANG</span>
+              <span>JUMLAH BUTIR</span>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-trigger">
+                <span class="room-name">Ruang Tampung</span>
+                <span class="room-total">0</span>
+                <i class="ti ti-chevron-right"></i>
+              </div>
+              <div class="accordion-content">
+                <div class="content-header">
+                  <span>KETERANGAN</span>
+                  <span>JUMLAH BUTIR</span>
+                </div>
+                <div class="content-row">
+                  <span>TELUR 007</span> <span>6.978</span>
+                </div>
+                <div class="content-row">
+                  <span>TELUR 009</span>
+                  <span>6.927</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-trigger">
+                <span class="room-name">Ruang Ciler</span>
+                <span class="room-total">132.290</span>
+                <i class="ti ti-chevron-right"></i>
+              </div>
+              <div class="accordion-content">
+                <p class="empty-state">Tidak ada data di ruang ini.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-trigger">
+                <span class="room-name">Ruang Timbang</span>
+                <span class="room-total">-</span>
+                <i class="ti ti-chevron-right"></i>
+              </div>
+              <div class="accordion-content">
+                <p class="empty-state">Tidak ada data di ruang ini.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="assets/scripts/inventori_telur.js"></script>
+    <script src="assets/scripts/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+.stock-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+
+.stock-badge.keluar {
+    background-color: #e74c3c;
+    /* Merah */
+}
+
+.stock-badge.masuk {
+    background-color: #2ecc71;
+    /* Hijau */
+}
+
+ 

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Opname - Surya Abadi Admin</title>
+    <script src="assets/scripts/stock_opname.js" defer></script>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+    />
+    <link rel="stylesheet" href="assets/styles/stock_opname.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <div class="logo">
+            <img
+              src="assets/img/logo.png"
+              alt="Logo Surya Abadi"
+              class="logo-image"
+            />
+            <span
+              >surya abadi <br /><small style="font-weight: 400"
+                >admin</small
+              ></span
+            >
+          </div>
+        </div>
+        <nav class="sidebar-nav">
+          <ul>
+            <li>
+              <a href="index.html"
+                ><i class="ti ti-layout-dashboard"></i><span>Dashboard</span></a
+              >
+            </li>
+
+            <li class="nav-category">STOCK LOG</li>
+            <li class="active">
+              <a href="stock_opname.html"
+                ><i class="ti ti-clipboard-check"></i
+                ><span>Stock Opname</span></a
+              >
+            </li>
+            <li>
+              <a href="kode_produksi.html"
+                ><i class="ti ti-numbers"></i
+                ><span>Kelola Kode Produksi</span></a
+              >
+            </li>
+
+            <li class="nav-category">PAGE INVENTORI</li>
+            <li>
+              <a href="inventori_telur.html"
+                ><i class="ti ti-egg"></i><span>Inventori Telur</span></a
+              >
+            </li>
+            <li>
+              <a href="inventori_bahan.html"
+                ><i class="ti ti-package"></i
+                ><span>Inventori Bahan Produksi</span></a
+              >
+            </li>
+
+            <li class="nav-category">PAGE PENJUALAN</li>
+            <li>
+              <a href="list_pesanan.html"
+                ><i class="ti ti-clipboard-text"></i><span>Pesanan</span></a
+              >
+            </li>
+            <li>
+              <a href="riwayat_pesanan.html"
+                ><i class="ti ti-history"></i><span>Riwayat Pesanan</span></a
+              >
+            </li>
+
+            <li class="nav-category">PAGE CATATAN</li>
+            <li>
+              <a href="log_screening.html"
+                ><i class="ti ti-bulb-filled"></i
+                ><span>Log Hasil Screening</span></a
+              >
+            </li>
+            <li>
+              <a href="catatan_penjualan.html"
+                ><i class="ti ti-clipboard-list"></i
+                ><span>Catatan Penjualan</span></a
+              >
+            </li>
+
+            <li class="nav-category">DATA KARYAWAN</li>
+            <li>
+              <a href="kelola_data.html"
+                ><i class="ti ti-user-check"></i
+                ><span>Kelola Data Karyawan</span></a
+              >
+            </li>
+            <li>
+              <a href="kelola_akun.html"
+                ><i class="ti ti-at"></i><span>Kelola Akun Staff</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <header class="header">
+          <div class="user-actions">
+            <a href="#" class="icon-btn"><i class="ti ti-mail"></i></a>
+            <a href="#" class="icon-btn"><i class="ti ti-bell"></i></a>
+            <a href="#" class="icon-btn"><i class="ti ti-user-circle"></i></a>
+          </div>
+        </header>
+
+        <section class="content-body">
+          <h1>Stock Opname</h1>
+
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>KETERANGAN BARANG</th>
+                  <th>NAMA BARANG</th>
+                  <th>TANGGAL</th>
+                  <th>KODE PRODUKSI</th>
+                  <th>JUMLAH BUTIR</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="stock-badge keluar">KELUAR</span></td>
+                  <td>CAFE BETAWI</td>
+                  <td>31/07/2025</td>
+                  <td>0070103</td>
+                  <td>3.698</td>
+                  <td><i class="ti ti-dots-vertical"></i></td>
+                </tr>
+                <tr>
+                  <td><span class="stock-badge masuk">MASUK</span></td>
+                  <td>CAFE BETAWI</td>
+                  <td>30/07/2025</td>
+                  <td>0070103</td>
+                  <td>3.698</td>
+                  <td><i class="ti ti-dots-vertical"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="stock-summary">
+            <div class="summary-row">
+              <span>Jumlah butir dalam Inventori</span>
+              <span>118.613</span>
+            </div>
+            <div class="summary-row">
+              <span>Jumlah setelah Keluar Masuk Barang</span>
+              <span>119.874</span>
+            </div>
+
+            <div class="summary-row summary-selisih">
+              <span>Selisih</span>
+              <span id="selisih-value">23</span>
+            </div>
+          </div>
+
+          <div class="pagination-footer">
+            <div class="show-entries">
+              <span>Show</span>
+              <select>
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="50">50</option>
+              </select>
+            </div>
+            <div class="pagination-group">
+              <div class="pagination-info">Showing 1 to 2 of 50 entries</div>
+              <div class="pagination-controls">
+                <a href="#" class="page-link">&lt;</a>
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">&gt;</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="assets/scripts/main.js"></script>
+    <script src="assets/scripts/stock_opname.js"></script>
+  </body>
+</html>
